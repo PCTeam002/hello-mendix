@@ -50,9 +50,5 @@ pipeline {
         failure {
             echo "❌ Build or deployment failed! Check logs above for details."
         }
-        always {
-            echo "🧹 Cleaning up workspace..."
-            cleanWs() // Hapus file workspace setelah selesai
-        }
     }
 }
