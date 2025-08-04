@@ -1,2 +1,2 @@
-FROM openjdk:11-jre-slim
+FROM mendix/mendix-buildpack:latest
 COPY src/app.mpk /opt/app/mendix.mpk
