@@ -14,6 +14,6 @@ apiVersion: apps/v1
       spec:
         containers:
           - name: mendix
-            image: your-docker-repo/mendix-app:latest
+            image: pyndhotaraya/hello-mendix:latest
             ports:
               - containerPort: 8080
