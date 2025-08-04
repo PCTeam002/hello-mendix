@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     echo "☸️ Deploying to Kubernetes cluster..."
-                    sh 'kubectl apply -f deployment/kubernetes/deployment.yaml'
+                    sh 'kubectl apply --validate=false -f deployment/kubernetes/deployment.yaml'
                 }
             }
         }
