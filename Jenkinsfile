@@ -7,7 +7,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t $DOCKER_IMAGE ./deployment'
+                    sh 'docker build -t $DOCKER_IMAGE ./deployment/Dockerfile'
                 }
             }
         }
