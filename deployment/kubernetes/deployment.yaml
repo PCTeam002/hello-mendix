@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: mendix-app
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: mendix
+    template:
+      metadata:
+        labels:
+          app: mendix
+      spec:
+        containers:
+          - name: mendix
+            image: your-docker-repo/mendix-app:latest
+            ports:
+              - containerPort: 8080
